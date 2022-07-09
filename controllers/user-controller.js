@@ -11,7 +11,7 @@ const getAll = async(req, res) => {
 
         const [results, itemCount] = await
         Promise.all([
-            User.find({}) 
+            User.find({}).select("-password") 
                 .sort({createdAt: -1})
                 .limit(req.query.limit)
                 .skip(req.skip)
@@ -40,7 +40,7 @@ const getAll = async(req, res) => {
 //get user by id
 const getOne = async(req, res) => {
     try {
-        const item = await User.findById(req.params.id);
+        const item = await User.findById(req.params.id).select("-password");
         if(item) {
             return res.status(200).json(item);
         }
