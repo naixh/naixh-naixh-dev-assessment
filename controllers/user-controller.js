@@ -91,7 +91,7 @@ const register = async (req, res) => {
         //send mail using mailgun
 
         const DOMAIN = 'mg.sudobrothers.com';
-        const mg = mailgun({apiKey:process.env.MG_API_KEY, domain: DOMAIN});
+        const mg = mailgun({apiKey:process.env.MG_API_KEY, domain: process.env.MG_DOMAIN});
             const mgdata = {
                 from: 'naaixh@gmail.com',
                 to: req.body.email,
