@@ -15,17 +15,19 @@ For development, you will need Node.js, MongoDb, Yarn or NPM installed in your d
 
 ## Getting Started
 
-```sh
+
 # clone it
 git clone https://github.com/naixh/dev-assessment.git
 cd dev-assessment
+cp .env.example .env
 
+Configure .env document and onece done.
 
 # Install dependencies using Yarn
-yarn
+npm i
 
 # Start development server & swagger
-yarn start-gendoc
+npm start
 
 ```
 
