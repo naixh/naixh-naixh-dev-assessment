@@ -18,7 +18,7 @@ For development, you will need Node.js, MongoDb, Yarn or NPM installed in your d
 
 # clone it
 ```
-git clone https://github.com/naixh/dev-assessment.git
+git clone https://github.com/naixh/naixh-naixh-dev-assessment.git
 cd dev-assessment
 cp .env.example .env
 
