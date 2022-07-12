@@ -50,7 +50,7 @@ router.get("/seed", async(req, res) => {
         //#swagger.tags = ['User'] 
     const admin = {
         name: "Administrator",
-        email: "admin@markscodingspot.com",
+        email: "admin@gmail.com",
         password: "Password123#",
         address1: "Test Address 123",
         address2: "Test Address 123 more info",
